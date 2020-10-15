@@ -1,6 +1,6 @@
 import joblib
 from flask import Flask, request, render_template
-
+from prediction import prediction
 app = Flask(__name__)
 
 
@@ -18,22 +18,27 @@ def immo():
 @app.route('/prediction', methods = ['POST','GET'])
 def rent():
     if request.method == 'POST':
-        input = request.form
-        b = float(input['b'])
-        k = float(input['k'])
-        c = float(input['c'])
-        ls = float(input['ls'])
-        nr = float(input['nr'])
-        g = float(input['g'])
-        con = float(input['con'])
-        bc = float(input['bc'])
-        sc = float(input['sc'])
-        iq = float(input['iq'])
-        l = float(input['l'])
-        nc = float(input['nc'])
+        data = request.form
+        data = data.to_dict()
+        data['newlyConst'] = bool(data['newlyConst'])
+        data['balcony'] = bool(data['balcony'])
+        data['picturecount'] = float(data['picturecount'])
+        data['hasKitchen'] = bool(data['hasKitchen'])
+        data['cellar'] = bool(data['cellar'])
+        data['livingSpace'] = float(data['livingSpace'])
+        data['noRooms'] = float(data['noRooms'])
+        data['garden'] = bool(data['garden'])
+        data['lift'] = bool(data['lift'])
+        data['big_cities'] = bool(data['big_cities'])
+        data['interiorQual'] = str(data['interiorQual'])
+        data['typeOfFlat'] = str(data['typeOfFlat'])
+        data['condition'] = str(data['condition'])
+        
 
-        pred = Model.predict([[b, k, c,ls,nr,g,con,bc,sc,iq,l,nc]])[0]
-        return render_template('result.html', data = input, prediksi = pred)
+        
+
+        hasil = int(prediction(data))
+        return render_template('result.html', prediksi = hasil)
 
 
 
