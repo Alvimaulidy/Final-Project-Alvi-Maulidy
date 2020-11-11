@@ -39,10 +39,10 @@ Thanks to startbootstrap.com, I have built this dashbord to support Rent Predict
 
 ![img1](/Home.png)
 
-![img2](/Marketing Anlysis.png)
+![img2](/Marketing.png)
 
-![img3](/predict 1.png)
+![img3](/predict1.png)
 
-![img4](/predict 2.png)
+![img4](/predict2.png)
 
-![img5](/result.png)
+![img5](/Result.png)
