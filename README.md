@@ -37,12 +37,12 @@ as we can see that we have improved the result, but the MAE is still 120 euro an
 ## Dashboard
 Thanks to startbootstrap.com, I have built this dashbord to support Rent Predictor.
 
-![img1](C:/Users/alvim/pwdk/FinalProject/Readme github/Home.png)
+![img1](/Home.png)
 
-![img2](C:/Users/alvim/pwdk/FinalProject/Readme github/Marketing Anlysis.png)
+![img2](/Marketing Anlysis.png)
 
-![img3](C:/Users/alvim/pwdk/FinalProject/Readme github/predict 1.png)
+![img3](/predict 1.png)
 
-![img4](C:/Users/alvim/pwdk/FinalProject/Readme github/predict 2.png)
+![img4](/predict 2.png)
 
-![img5](C:/Users/alvim/pwdk/FinalProject/Readme github/result.png)
+![img5](/result.png)
