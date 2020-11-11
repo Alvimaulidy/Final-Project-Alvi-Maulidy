@@ -13,8 +13,21 @@ this dataset contains rental offers from all around states in germany, thats why
 2. Droping extreme rent values and wrongly coded values in every categories of dataset.
 3. make binaries variable to later be used for modelling the data.
 4. make a overview data if the data has no missing values.
-## Exporatory Data Analysis
+## Exploratory Data Analysis
 Elaborations of a general overview of rental real estate in Nordrhein Westfalen.
+
+Distribution Base Rent in every main district.
+![img6](/baserent3.png)
+
+Distribution based on Condition.
+![img7](/distribution_condition.png)
+
+Distribution based on Interior condition.
+![img8](/distribution_interior.png)
+
+Distribution based on Type of Property.
+![img9](/distribution_type.png)
+
 ## Modelling
 Using Gradient Boosting, Linear Regression, Desicion Tree Regressor, and Random Forrest Regressor as base model and finding the best result of it. After that we can do tuning.
 
